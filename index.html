@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Informacion</title>
+</head>
+<body>
+    <a href="/obtenerUsuario">Obtener Usuarios</a>
+
+    <form action="/agregarUsuario" method="post">
+    <input type="text" name="Usuario" placeholder="Nombre de Usuario">
+    <input type="submit" value="Agregar Usuario">
+    
+  </form>
+
+   
+   <br>
+   <br>
+   <form action="/borrarUsuario" method="post">
+    <input type="text" name="idUsuario" placeholder="Ingresa el Usuario">
+    <input type="submit" value="Borrar Usuario">
+   </form>
+<br>
+<br>
+    <form action="/modificarusuario" method="post">
+<input type="text" name="idUsuario" placeholder="Ingresa un nuevo id">
+<input type="text" name="Usuario" placeholder="Ingresa un nuevo nombre  ">
+
+<input type="submit" value="Modifica Usuario">
+
+    </form>
+
+</body>
+</html>
